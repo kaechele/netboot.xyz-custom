@@ -4,9 +4,9 @@
 ###
 
 :start
-echo Hello world!
-sleep 10
-goto custom_exit
+kernel https://boot.netboot.xyz/memdisk raw iso
+initrd https://download.lenovo.com/pccbbs/thinkcentre_bios/fwj9acusa.iso
+boot || goto custom_exit
 
 :custom_exit
 exit 0
